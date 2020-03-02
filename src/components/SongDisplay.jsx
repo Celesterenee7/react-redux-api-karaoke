@@ -11,10 +11,10 @@ const SongDisplay = ({ dispatch, song }) => {
     <div>
       <h1>{title}</h1>
       <h4>{artist}</h4>
-      <hr/>
+      <hr />
       <div onClick={e => {
         e.preventDefault();
-        if(!(arrayPosition === songArray.length - 1)) {
+        if (!(arrayPosition === songArray.length - 1)) {
           dispatch(nextLyric(id));
         } else {
           dispatch(restartSong(id));
